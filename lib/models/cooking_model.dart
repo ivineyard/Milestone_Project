@@ -323,6 +323,7 @@ class CookingModel extends ChangeNotifier {
     try {
       final url = Uri.parse(
         'https://www.themealdb.com/api/json/v1/1/search.php?s=chicken',
+        //https://this-address-does-not-exist-12345.com to force a no wifi screen
       );
 
       final response = await http.get(url).timeout(
